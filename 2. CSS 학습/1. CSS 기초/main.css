@@ -1,0 +1,9 @@
+
+ -기본작성형태
+ 선택자 {
+  속성
+@import "./common.css";
+div {
+    /* 여기는 주석입니다. */
+    color: red;
+}
