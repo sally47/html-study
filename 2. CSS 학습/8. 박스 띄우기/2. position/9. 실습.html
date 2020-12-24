@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            display: flex;
+        }
+        .container .box {
+
+            position: relative;
+
+            width: 100px;
+            height: 100px;
+            background: rgb(134, 73, 73);
+            border: 4px dashed red;
+            border-radius: 10px
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-right: -30px;
+            box-shadow: 0 0 10px 255,0,0,0.7;
+            transition: 0.7s;
+        }
+        .container .box:hover {
+            background: yellowgreen;
+            background-color:yellow;
+            cursor: pointer;
+            z-index: 100;
+            /* position: relative; */
+            /* bottom: 20px; */
+            transform: translateY(-20px);
+        }
+
+        .container .box:nth-child(2n) {
+            margin-top: 30px;
+        }
+        .box2 {
+            z-index: 20;
+        }
+        .box3 {
+            z-index: 25;
+        }
+        .box4{
+            z-index: 30;
+        }
+        .box5{
+            z-index: 35;
+        }
+        .box6{
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">1</div>
+        <div class="box box7">2</div>
+        <div class="box box8">3</div>
+        <div class="box box9">4</div>
+        <div class="box box10">5</div>
+        <div class="box box11">1</div>
+        <div class="box box12">2</div>
+        <div class="box box13">3</div>
+        <div class="box box14">4</div>
+        <div class="box box15">5</div>
+    </div>
+</body>
+</html>

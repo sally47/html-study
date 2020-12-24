@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background: red;
+
+            /* transition-property: width, background; */
+            /* transition-property:all;
+            transition-duration: 2s; */
+            /* {
+        transition: width 1s, background 0.7s;  */
+        /* transition: 1000ms;
+        transition-delay: 1s; */
+        /* transition: all 1s 1s; 
+        
+        transition: 1s steps(10); */
+        transition: all 1s 2s linear;
+        }
+        .box:hover{
+            width: 300px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
